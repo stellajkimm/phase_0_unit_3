@@ -5,7 +5,7 @@
 
 
 ### My Quiz Results:
-+![image](https://github.com/stellajkimm/phase_0_unit_3/blob/master/week_7/imgs/sqlzoo_quiz.jpg)
+https://github.com/stellajkimm/phase_0_unit_3/blob/master/week_7/imgs/sqlzoo_quiz.jpg
 
 ### Reflection
 
