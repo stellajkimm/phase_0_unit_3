@@ -47,4 +47,4 @@ https://github.com/stellajkimm/phase_0_unit_3/blob/master/week_7/imgs/solo_schem
 
 ## Release 5: Reflection
 <!-- Be sure to add your reflection here!!! -->
-This challenge is difficult because I have no idea how to check if my answers are actually right or not.  I am really confused how to use SQL to actually check my work.  In Ruby, you can always use IRB to check your work, but in this case, I actually don't know what's going on.
+This challenge is difficult because I have no idea how to check if my answers are actually right or not.  I am really confused how to use SQL to actually check my work.  In Ruby, you can always use IRB to check your work, but in this case, I actually don't know what's going on.  I can't figure out the last challenge in release 4.
