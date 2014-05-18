@@ -28,19 +28,25 @@ https://github.com/stellajkimm/phase_0_unit_3/blob/master/week_7/imgs/solo_schem
 ## Release 4: SQL Statements
 <!-- Include your SQL Statements. How can you make markdown files show blocks of code? -->
 + all the tweets for a certain user id
+```
     SELECT tweet_text
       FROM tweets JOIN users ON users.id = user_id
       WHERE users.id = 34
+```
 
 + the tweets for a certain user id that were made after last Wednesday (whenever last Wednesday was for you)
+```
     SELECT tweet_text
       FROM tweets JOIN users ON users.id = user_id
       WHERE tweets.created_at >= #5/7/2014#
+```
 
 + all the tweets associated with a given user's twitter handle
+```
     SELECT tweet_text
       FROM tweets JOIN users ON users.id = user_id
       WHERE tweet_text like '%user_name%'
+```
 
 + the twitter handle associated with a given tweet id
  hmm... this one is a toughie.
