@@ -5,7 +5,7 @@
 
 
 ### My Quiz Results:
-<img src = "../imgs/sqlzoo_quizzes.jpg" />
+<img src = "imgs/sqlzoo_quizzes.jpg" />
 
 
 ### Reflection
