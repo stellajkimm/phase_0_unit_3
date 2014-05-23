@@ -7,7 +7,7 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge [by myself, with:]
+I worked on this challenge [with: Ken M.]
 
 */
 
@@ -19,24 +19,41 @@ var scores = [ [80, 70, 70, 100],
                [100, 90, 95, 85] ]
 
 
-
-
-
-
 // __________________________________________
 // Write your code below.
 
+function average(numList) {
+    totalSum = 0;
+    for (var i = 0; i < numList.length; i++) {
+    totalSum += numList[i];
+    }
+    return totalSum / numList.length
+}
+
+var gradebook = {}
 
 
+gradebook.Joseph = {}
+gradebook.Susan = {}
+gradebook.William = {}
+gradebook.Elizabeth = {}
 
+gradebook.Joseph.testScores = scores[0]
+gradebook.Susan.testScores = scores[1]
+gradebook.William.testScores = scores[2]
+gradebook.Elizabeth.testScores = scores[3]
 
+gradebook.addScore = function (student, score) {
+    gradebook[student]["testScores"].push(score);
+
+}
+
+gradebook.getAverage = function (student) {
+    return average(gradebook[student].testScores);
+}
 
 // __________________________________________
 // Refactored Solution
-
-
-
-
 
 
 
@@ -45,7 +62,10 @@ var scores = [ [80, 70, 70, 100],
 // Reflect
 
 
-
+// This is a fairly easy challenge.  I am having trouble understanding when to put a semi-colon
+// in javascript.  Sublime tells me that I am missing semi-colons but when I run it in node, it is
+// fine.  HMmmmMMmm.  But then I found this website and it is a little more clear: http://www.codecademy.com/blog/78-your-guide-to-semicolons-in-javascript
+// 
 
 
 
