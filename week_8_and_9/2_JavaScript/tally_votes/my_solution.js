@@ -69,7 +69,12 @@ var officers = {
 // __________________________________________
 // Initial Solution
 
+function tally {
+  for (i = 0, i < votes.length, i++) {
+    
+  }
 
+}
 
 
 
