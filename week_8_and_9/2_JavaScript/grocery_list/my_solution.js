@@ -1,7 +1,7 @@
 // U3.W8-9: 
 
 
-// I worked on this challenge [by myself, with: ].
+// I worked on this challenge [by myself].
 
 
 // User Stories (As many as you want. Delete the statements you don't need)
@@ -59,7 +59,11 @@ groceryList.changeAmount("apples", 2);
 groceryList.printList();
 groceryList.clearList();
 groceryList.printList();
-// groceryList.clearList();
 
 
 // 5. Reflection 
+
+// I had a little trouble with the printList and clearList function because I wanted to remove
+// and print only the items and not the function.  I tutored with Johnny Wu and he told me I was
+// making an object literal so the way I could do it is if I add a hash inside the object literal
+// and work off that.  This worked!
