@@ -1,6 +1,6 @@
 // U3.W8-9: Gradebook from Names and Scores
 
-// I worked on this challenge [by myself, with:]
+// I worked on this challenge [by myself]
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -69,16 +69,29 @@ var officers = {
 // __________________________________________
 // Initial Solution
 
-function tally {
-  for (i = 0, i < votes.length, i++) {
-    
+tally = function (votes) {
+  for (var k in votes) {
+    for (var m in votes[k]) {
+      if (voteCount[m][votes[k][m]] === undefined) {
+        voteCount[m][votes[k][m]] = 1;
+      }
+      else {
+        voteCount[m][votes[k][m]] += 1;
+      }
+    }
   }
+  for (var x in voteCount) {
+    var max = 0
+    for (var y in voteCount[x]) {
+      if (voteCount[x][y] > max) {
+        max = voteCount[x][y];
+        officers[x] = y;
+      }
+    }
+  }
+};
 
-}
-
-
-
-
+tally(votes);
 
 // __________________________________________
 // Refactored Solution
@@ -91,7 +104,8 @@ function tally {
 // __________________________________________
 // Reflection
 
-
+// I didn't pseudocode this because i had to think about it a lot more while testing it out.
+// I couldn't think of the exact solution to pseudocode it.
 
 
 

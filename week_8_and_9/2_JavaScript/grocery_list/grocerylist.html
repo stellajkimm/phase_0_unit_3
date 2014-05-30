@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+
+debugger;
+var groceryList = {};
+
+groceryList.addItem = function (item, num) {
+	groceryList[item] = num;
+};
+
+groceryList.removeItem = function (item) {
+	delete groceryList[item];
+};
+
+groceryList.clearList = function () {
+	for(var i in groceryList) {
+		if (typeof(groceryList.i) !== "function") delete groceryList.i;
+	}
+};
+
+groceryList.changeAmount = function (item, num) {
+	groceryList[item] = num;
+};
+
+groceryList.printList = function () {
+	for(var i in groceryList) {
+		if (typeof(groceryList.i) !== "function") {console.log(groceryList.i)};
+	}
+};
+
+</script>
+</body>
+</html>
